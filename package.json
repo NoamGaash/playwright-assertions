@@ -1,0 +1,50 @@
+{
+	"name": "playwright-assertions",
+	"version": "1.0.0",
+	"description": "Custom matchers for Playwright",
+	"files": [
+		"lib/**/*"
+	],
+	"main": "lib/index.js",
+	"types": "lib/index.d.ts",
+	"scripts": {
+		"test": "playwright test",
+		"build": "tsc",
+		"format": "prettier --write \"src/**/*.ts\" \"tests/**/*.ts\"",
+		"lint": "eslint .",
+		"lint:fix": "eslint --fix .",
+		"version": "npm run format && git add -A src",
+		"prepare": "npm run build",
+		"prepublishOnly": "npm test && npm run lint",
+		"preversion": "npm run lint",
+		"postversion": "git push && git push --tags"
+	},
+	"author": "noam.gaash@gmail.com",
+	"license": "MIT",
+	"devDependencies": {
+		"@playwright/test": "^1.49.0",
+		"@types/node": "^22.9.3",
+		"@typescript-eslint/eslint-plugin": "^8.18.1",
+		"@typescript-eslint/parser": "^8.18.1",
+		"eslint": "^8.51.0",
+		"eslint-config-prettier": "^9.0.0",
+		"eslint-plugin-prettier": "^5.0.1",
+		"prettier": "^3.0.3",
+		"typescript": "^5.7.2"
+	},
+	"peerDependencies": {
+		"playwright": "^1.35.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/NoamGaash/playwright-assertions.git"
+	},
+	"keywords": [
+		"playwright",
+		"expect",
+		"assertions",
+		"custom-matchers",
+		"testing",
+    "automation"
+	]
+}
