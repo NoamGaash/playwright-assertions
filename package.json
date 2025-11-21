@@ -1,6 +1,6 @@
 {
 	"name": "playwright-assertions",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"description": "Custom matchers for Playwright",
 	"files": [
 		"lib/**/*"
@@ -45,6 +45,6 @@
 		"assertions",
 		"custom-matchers",
 		"testing",
-    "automation"
+		"automation"
 	]
 }
