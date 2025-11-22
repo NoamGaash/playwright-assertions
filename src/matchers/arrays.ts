@@ -1,7 +1,7 @@
-import { Matchers } from "../types";
+import { ExpectMatcherState } from "playwright/test";
 
-export const matchers: Matchers = {
-  toHaveDuplications(received: Array<unknown>) {
+export const matchers = {
+  toHaveDuplications(this: ExpectMatcherState, received: Array<unknown>) {
     const dups = received.toSorted().filter((item, index, arr) => item === arr[index - 1]);
     const uniqueDups = [...new Set(dups)];
     const pass = uniqueDups.length > 0;
