@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.1](https://github.com/NoamGaash/playwright-assertions/compare/v1.0.0...v1.0.1) (2025-11-22)
+
+
+### Bug Fixes
+
+* make types strictier ([872ba18](https://github.com/NoamGaash/playwright-assertions/commit/872ba185c156fcdb887d6e8e82622a7862e50a4d))
+* make types strictier ([9a76d14](https://github.com/NoamGaash/playwright-assertions/commit/9a76d14e8d755078b7058f231024dc5ae2e60037))
+
 ## 1.0.0 (2025-11-21)
 
 
