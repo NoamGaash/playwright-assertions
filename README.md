@@ -1,3 +1,4 @@
+[![npm version](https://img.shields.io/npm/v/playwright-assertions.svg)](https://www.npmjs.com/package/playwright-assertions)
 
 # playwright-assertions
 
